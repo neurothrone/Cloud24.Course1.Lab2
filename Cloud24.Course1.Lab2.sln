@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStore.Core", "SimpleStore.Core\SimpleStore.Core.csproj", "{3E347F4D-CE35-4159-893F-A7C364E55AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStore.Maui.Client", "SimpleStore.Maui.Client\SimpleStore.Maui.Client.csproj", "{8F83E89B-21AD-4D0F-B364-69D5A682C343}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{320E869E-34F0-49C6-AAA3-221C8909CCFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{6F402585-1DCE-4B58-8F48-7906B80524EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E347F4D-CE35-4159-893F-A7C364E55AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E347F4D-CE35-4159-893F-A7C364E55AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E347F4D-CE35-4159-893F-A7C364E55AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E347F4D-CE35-4159-893F-A7C364E55AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F83E89B-21AD-4D0F-B364-69D5A682C343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F83E89B-21AD-4D0F-B364-69D5A682C343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F83E89B-21AD-4D0F-B364-69D5A682C343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F83E89B-21AD-4D0F-B364-69D5A682C343}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E347F4D-CE35-4159-893F-A7C364E55AB3} = {6F402585-1DCE-4B58-8F48-7906B80524EC}
+		{8F83E89B-21AD-4D0F-B364-69D5A682C343} = {320E869E-34F0-49C6-AAA3-221C8909CCFF}
+	EndGlobalSection
+EndGlobal

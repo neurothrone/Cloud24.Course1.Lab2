@@ -6,6 +6,13 @@
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
         <!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
 
+        <!-- FIX:
+		     This fixes the error: "This version of the MVVM Toolkit requires 'Microsoft.Windows.SDK.NET.Ref' version '10.0.19041.38' or later."
+			 Source:
+			 https://stackoverflow.com/questions/78990331/how-can-i-fix-this-communitytoolkit-mvvm-error-message-when-i-install-it-in-my-m/78990501#78990501
+		-->
+        <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
+
         <!-- Note for MacCatalyst:
         The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
         When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
@@ -24,7 +31,12 @@
         <ApplicationTitle>SimpleStore</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.simplestore.maui.client</ApplicationId>
+        <!-- FIX:
+		     Unable to deploy on Windows until ApplicantId was shortened.
+			 Source:
+			 https://github.com/dotnet/maui/issues/18814#issuecomment-1815948538
+		-->
+        <ApplicationId>com.companyname.simplestore</ApplicationId>
 
         <!-- Versions -->
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
